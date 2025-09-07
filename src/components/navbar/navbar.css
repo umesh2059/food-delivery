@@ -34,8 +34,9 @@
     padding: 10px 30px;
     border-radius: 50px;
     cursor:pointer;
+    transition:0.4s;
 }
 
 .navbar button:hover{
-    background-color: #fff4f2;
+    background-color: orange;
 }
