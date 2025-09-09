@@ -12,6 +12,16 @@
 }
 .explore-menu-text{
     max-width: 60%;
-    
-
+}
+.explore-menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+}
+.explore-menu-list::-webkit-scrollbar{
+    display:none;
 }

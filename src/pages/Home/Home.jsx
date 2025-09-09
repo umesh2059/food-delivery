@@ -4,7 +4,7 @@ import Header from '../../components/header/header';
 import ExploreMenu from '../../components/ExploreMenu/ExploreMenu';
 
 
-const Home = () => {
+const Home = ( category,setCategory) => {
   return (
     <div>
       <Header/>
