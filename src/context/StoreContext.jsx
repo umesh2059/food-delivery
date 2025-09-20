@@ -6,16 +6,16 @@ export const StoreContext = createContext(null);
 
    const[cartItems,setCartItem]=useState({});
 
-      const addToCart = (cartId)=>{
-        if(!cartItems[cartId]){
-          setCartItem((prev)=>({...prev,[cartId]:1}))
+      const addToCart = (itemId)=>{
+        if(!cartItems[itemId]){
+          setCartItem((prev)=>({...prev,[itemId]:1}))
         }
         else{
-           setCartItem((prev)=>({...prev,[cartId]:prev[cartId]+1}))
+           setCartItem((prev)=>({...prev,[itemId]:prev[itemId]+1}))
         }
       }
       const removeFromCart=(itemId)=>{
-        setCartItem((prev)=>({...prev,[cartId]:prev[cartId]-1}))
+        setCartItem((prev)=>({...prev,[itemId]:prev[itemId]-1}))
 
       }
       useEffect(()=>{
