@@ -5,12 +5,15 @@ import Home from './pages/Home/home';
 import placeOrder from './pages/placeOrder/placeOrder';
 import cart from './pages/cart/cart';
 import Footer from './components/Footer/Footer';
+import LoginPopup from './components/LoginPopup/LoginPopup';
 
 const App = () => {
+  const [ShowLogin,setShowLogin]=useState(false);
   return (
     <>
+    {ShowLogin?<LoginPopup/>:<></>}
     <div className='app'>
-      <Navbar/>
+      <Navbar setShowLogin={setShowLogin}/>
       
        <Routes>
         <Route path='/' element={<Home/>}/>
